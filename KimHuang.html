@@ -69,11 +69,13 @@
                             <div class="tab-pane active" id="programming">
                                 <h4>Programming Language Experience</h4>
                                 <ul>
-                                    <li>Silverstripe Project for Ara Student Accommodation - Otautahi House</li>
+                                    <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
+                                    <p><a href="https://otautahihouse.zapto.org/">Otautahi House Webpage</a></p>
                                     <li>Javascript Coursework</li>
-                                    <p>VueJS / ReactJS / NodeJS</p>
+                                    <p><a href="https://github.com/KimHuang1983/CorrelationRegressionCalc.git">Github
+                                            Links</a> for coursework files</p>
+                                    <p>The course work uses: VueJS / ReactJS / NodeJS / HTML 5 / CSS / BootStrap 4</p>
                                     <li>PHP Coursework</li>
-                                    <li>HTML 5 / CSS / BootStrap 4</li>
                                 </ul>
                             </div>
                             <div class="tab-pane" id="education">
@@ -105,10 +107,10 @@
                         </div>
                     </div>
                     <div v-if="projectDisplay">
-                        <div v-if="silverstripeDisplay">
-                            <h4>Silverstripe Project</h4>
+                        <div v-if="webProjectDisplay">
+                            <h4>Web Development Project</h4>
                             <ul>
-                                <li>Silverstripe Project for Ara Student Accommodation - Otautahi House</li>
+                                <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
                             </ul>
                         </div>
                         <div v-if="javascriptDisplay">
@@ -126,10 +128,10 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <h4>Project Show</h4>
+                    <h4>Project Explanation</h4>
                     <div class="btn-group-vertical">
-                        <button type="button" class="btn btn-outline-primary" @click="displaySSProject">Silverstripe
-                            Project</button>
+                        <button type="button" class="btn btn-outline-primary" @click="displayWebProject">Web
+                            Development Project</button>
                         <button type="button" class="btn btn-outline-secondary" @click="displayJSProject">Javascript
                             Project</button>
                         <button type="button" class="btn btn-outline-success" @click="displayPHPProject">PHP Project</button>
@@ -172,7 +174,7 @@
                 educationDisplay: false,
                 workexperienceDisplay: false,
                 mainDisplay: true,
-                silverstripeDisplay: false,
+                webProjectDisplay: false,
                 javascriptDisplay: false,
                 phpDisplay: false,
                 projectDisplay: false
@@ -182,24 +184,24 @@
                     this.mainDisplay = true;
                     this.projectDisplay = false;
                 },
-                displaySSProject: function () {
+                displayWebProject: function () {
                     this.mainDisplay = false;
                     this.projectDisplay = true;
-                    this.silverstripeDisplay = true;
+                    this.webProjectDisplay = true;
                     this.javascriptDisplay = false;
                     this.phpDisplay = false;
                 },
                 displayJSProject: function () {
                     this.mainDisplay = false;
                     this.projectDisplay = true;
-                    this.silverstripeDisplay = false;
+                    this.webProjectDisplay = false;
                     this.javascriptDisplay = true;
                     this.phpDisplay = false;
                 },
                 displayPHPProject: function () {
                     this.mainDisplay = false;
                     this.projectDisplay = true;
-                    this.silverstripeDisplay = false;
+                    this.webProjectDisplay = false;
                     this.javascriptDisplay = false;
                     this.phpDisplay = true;
                 }
