@@ -31,6 +31,20 @@
             padding: 2rem 0;
             background-color:#7cc8d847;
         }
+        .note {
+            color:#73aeb8;
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        #myCV {
+            margin-bottom: 1rem;
+        }
+       @media only screen and (max-width: 36rem) {
+        .heading-align > h4 {
+            text-align: center;
+        }
+       }
+       
     </style>
 </head>
 
@@ -45,12 +59,15 @@
             <div class="row">
                 <div class="col-sm-8">
                     <div v-if="mainDisplay">
-                        <div>
+                        <div class="heading-align">
                             <h4>Personal Statement</h4>
-                            <p>I made a life-changing decision on career shifting during 2018. In the past, I was all
-                                in people business, now I decide to learn programming, during the time in Ara, I
+                            <p>I made a life-changing decision on career shifting during 2018. In the past, I was
+                                involved all
+                                in people business, now, I decide to learn programming, something for a long time I
+                                wanted to pursue. During the time in Ara, I
                                 managed to keep up with the leading group in the class, although having no background
-                                in IT made me panic at start, I have found myself in love with it. </p>
+                                in IT made me panic at start, after all hardworks and sometimes frustration, I have
+                                found myself in love with it. </p>
                         </div>
                         <div>
                             <ul class="nav nav-tabs justify-content-center" role="tablist">
@@ -67,74 +84,137 @@
                         </div>
                         <div class="tab-content">
                             <div class="tab-pane active" id="programming">
-                                <h4>Programming Language Experience</h4>
-                                <ul>
-                                    <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
-                                    <p><a href="https://otautahihouse.zapto.org/">Otautahi House Webpage</a></p>
-                                    <li>Javascript Coursework</li>
-                                    <p><a href="https://github.com/KimHuang1983/CorrelationRegressionCalc.git">Github
-                                            Links</a> for coursework files</p>
-                                    <p>The course work uses: VueJS / ReactJS / NodeJS / HTML 5 / CSS / BootStrap 4</p>
-                                    <li>PHP Coursework</li>
-                                </ul>
+                                <div class="heading-align">
+                                    <h4>Programming Experience</h4>
+                                    <ul>
+                                        <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
+                                        <p>Responsive <a href="https://otautahihouse.zapto.org/">Otautahi House Webpage</a></p>
+                                        <p>Please visit <a href="https://github.com/KimHuang1983/Web-Development-Project.git">GitHub
+                                                Link </a>of the project for full coding work</p>
+                                        <li>Javascript Coursework</li>
+                                        <p>The coursework uses: VueJS / ReactJS / NodeJS / HTML 5 / CSS / BootStrap 4</p>
+                                        <p>Please visit <a href="https://github.com/KimHuang1983/CorrelationRegressionCalc.git">GitHub
+                                                Link</a> for coursework files</p>
+                                        <!-- <li>PHP Coursework</li>
+                                        <p>to be completed soon...</p> -->
+                                    </ul>
+                                </div>
                             </div>
                             <div class="tab-pane" id="education">
-                                <h4>Education</h4>
-                                <ul>
-                                    <li>Graduate Diploma in ICT</li>
-                                    <p>Ara Institute of Canterbury, NZ</p>
-                                    <li>Postgraduate Diploma of Hotel Management (with Merit)</li>
-                                    <p>Pacific International Hotel Management School, NZ</p>
-                                    <li>BA International Accounting</li>
-                                    <p>University of Northampton, UK</p>
-                                    <li>GCE A Level</li>
-                                    <p>Loughborough College, UK</p>
-                                </ul>
+                                <div class="heading-align">
+                                    <h4>Education</h4>
+                                    <ul>
+                                        <li>Graduate Diploma in ICT</li>
+                                        <p>(2018 - Now)</p>
+                                        <p>Ara Institute of Canterbury, NZ</p>
+
+                                        <li>Postgraduate Diploma of Hotel Management (with Merit)</li>
+                                        <p>(2014-2015)</p>
+                                        <p>Pacific International Hotel Management School, NZ</p>
+
+                                        <li>BA International Accounting</li>
+                                        <p>(2008-2009)</p>
+                                        <p>University of Northampton, UK</p>
+
+                                        <li>GCE A Level</li>
+                                        <p>(2001-2003)</p>
+                                        <p>Loughborough College, UK</p>
+
+                                    </ul>
+                                </div>
                             </div>
                             <div class="tab-pane" id="work">
-                                <h4>Work Experience</h4>
-                                <ul>
-                                    <li>Supa Panda Restaurant</li>
-                                    <li>Sunson Chinese Supermarket</li>
-                                    <li>SkyCity Grand Hotel</li>
-                                    <li>ShenZhen BolaiMei Electronic Co., Ltd</li>
-                                    <li>Self-Employment</li>
-                                    <li>Tradekey Ltd</li>
-                                    <li>ShenZhen Bloves Ltd</li>
-                                    <li>China Gold Coin ShenZhen Retail Centre</li>
-                                </ul>
+                                <div class="heading-align">
+                                    <h4>Work Experience</h4>
+                                    <ul>
+                                        <li>Supa Panda Restaurant (2016 Jul - 2017 Oct)</li>
+                                        <p>Postion: Duty Manager</p>
+
+                                        <li>Sunson Chinese Supermarket (2016 Dec - 2017 Jul)</li>
+                                        <p>Postion: Cashier</p>
+
+                                        <li>Sudima Christchurch Airport (2016 Feb - 2016 May)</li>
+                                        <p>Position: Housekeeping</p>
+
+                                        <li>SkyCity Grand Hotel (2015 Jul - 2017 Jan)</li>
+                                        <p>Postion: Porter</p>
+
+                                        <li>ShenZhen BolaiMei Electronic Co., Ltd (2013 Jul - 2014 May)</li>
+                                        <p>Postion: International Trading Manager</p>
+
+                                        <li>Tradekey Ltd (2012 Feb - 2012 Dec)</li>
+                                        <p>Postion: Account Manager</p>
+
+                                        <li>ShenZhen Bloves Ltd (2011 Aug - 2012 Jan)</li>
+                                        <p>Postion: Accountant</p>
+
+                                        <li>China Gold Coin ShenZhen Retail Centre (2009 Nov - 2011 Jul)</li>
+                                        <p>Postion: Sale Manager</p>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div v-if="projectDisplay">
                         <div v-if="webProjectDisplay">
-                            <h4>Web Development Project</h4>
-                            <ul>
-                                <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
-                            </ul>
+                            <div class="heading-align">
+                                <h4>Web Development Project</h4>
+                                <ul>
+                                    <li>Web Development Project for Ara Student Accommodation - Otautahi House</li>
+                                    <li>Client was interviewed as well as onsite student who live in the accommodation</li>
+                                    <li>Project was carried out using a live server</li>
+                                    <li>Main tools for development includes:
+                                        <ul>
+                                            <li>HTML 5</li>
+                                            <li>CSS</li>
+                                            <li>JQuery(flipping pictures)</li>
+                                            <li>Javascript</li>
+                                        </ul>
+                                    </li>
+                                    <li>Project is still under modification after first presentation to client</li>
+                                </ul>
+                            </div>
                         </div>
                         <div v-if="javascriptDisplay">
-                            <h4>Javascript Project</h4>
-                            <ul>
-                                <li>Javascript Coursework</li>
-                            </ul>
+                            <div class="heading-align">
+                                <h4>Javascript Project</h4>
+                                <ul>
+                                    <li>Javascript Coursework was about designing a Correlation and Regression
+                                        Calculator using different frameworks</li>
+                                    <li>Formula was provided in advance</li>
+                                    <li>Prototype was developed using vary methods:
+                                        <ul>
+                                            <li>UML dynamic diagram</li>
+                                            <li>Use case</li>
+                                            <li>Pseudocode</li>
+                                            <li>Spike solution</li>
+                                        </ul>
+                                    </li>
+                                    <li>Inheritance was used between Classes</li>
+                                    <li>Best effort was made to simplify the code by calling pre-defined functions and
+                                        used StandardJS to tidy up the
+                                        code and structure</li>
+                                </ul>
+                            </div>
                         </div>
                         <div v-if="phpDisplay">
-                            <h4>PHP project</h4>
-                            <ul>
-                                <li>PHP Coursework</li>
-                            </ul>
+                            <div class="heading-align">
+                                <h4>PHP project</h4>
+                                <ul>
+                                    <li>PHP Coursework</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <h4>Project Explanation</h4>
                     <div class="btn-group-vertical">
+                        <h4>Project Explanation</h4>
                         <button type="button" class="btn btn-outline-primary" @click="displayWebProject">Web
                             Development Project</button>
                         <button type="button" class="btn btn-outline-secondary" @click="displayJSProject">Javascript
                             Project</button>
-                        <button type="button" class="btn btn-outline-success" @click="displayPHPProject">PHP Project</button>
+                        <!-- <button type="button" class="btn btn-outline-success" @click="displayPHPProject">PHP Project</button> -->
                         <br />
                         <button type="button" class="btn btn-info" @click="resetDiaplay">Show Profile</button>
                     </div>
@@ -143,24 +223,29 @@
             <hr />
             <div class="row">
                 <div class="col-sm-8">
-                    <h4>Other Development</h4>
-                    <ul>
-                        <li>New Zealand Full Licence</li>
-                        <li>Manager's Certificate</li>
-                    </ul>
-                    <h4>Interests</h4>
-                    <ul>
-                        <li>Tramping/Mountain Climbing</li>
-                        <li>Table Tennis</li>
-                        <li>Swimming</li>
-                        <li>Badminton</li>
-                    </ul>
+                    <div class="heading-align">
+                        <h4>Other Development</h4>
+                        <ul>
+                            <li>New Zealand Full Licence</li>
+                            <li>Manager's Certificate</li>
+                        </ul>
+                        <h4>Interests</h4>
+                        <ul>
+                            <li>Tramping/Mountain Climbing</li>
+                            <li>Table Tennis</li>
+                            <li>Swimming</li>
+                            <li>Badminton</li>
+                        </ul>
+                    </div>
+
                 </div>
                 <div class="col-sm-4">
                     <h4>References</h4>
-                    <p>Andy Shang</p>
-                    <p>Mike Lance</p>
-                    <p>Chris Bartlett</p>
+                    <p v-bind:title="AndyS"><strong>Andy Shang</strong> : IT Professional in Vector Limited</p>
+                    <p><strong>Mike Lance</strong> : Academic Head of Computing Department in
+                        Ara</p>
+                    <p><strong>Chris Bartlett</strong>: Website Development Tutor in Ara</p>
+                    <span class="note">(When on desktop, please hover the mouse over the names for details!)</span>
                 </div>
             </div>
         </div>
@@ -177,7 +262,8 @@
                 webProjectDisplay: false,
                 javascriptDisplay: false,
                 phpDisplay: false,
-                projectDisplay: false
+                projectDisplay: false,
+                AndyS: 'email: andy.shang@vectorams.co.nz '
             },
             methods: {
                 resetDiaplay: function () {
